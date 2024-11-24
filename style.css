@@ -17,6 +17,7 @@ form {
   max-width: 500px;
   min-width: 300px;
   width: 60vw;
+  padding: 2em;
 }
 label {
   display: block;
@@ -47,9 +48,32 @@ select {
   margin-right: 0;
   width: 100%;
 }
+input,
+textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  min-height: 2em;
+}
 .inline {
   width: unset;
   margin: 0;
   margin-right: 2em;
   vertical-align: middle;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  min-width: 300px;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+}
+input[type="file"] {
+  padding: 1px 2px;
+}
+a {
+  color: #dfdfe2;
 }
