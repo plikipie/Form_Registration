@@ -64,8 +64,48 @@
           Business Account
         </label>
       </fieldset>
-      <fieldset></fieldset>
-      <input type="submit" value="Submit" />
+      <fieldset>
+        <label for="profilePicture"
+          >Upload your profile picture:<input
+            type="file"
+            name="profilePicture"
+            id="profilePicture"
+            accept="image/*"
+        /></label>
+        <label for="age"
+          >Input your age (years):
+          <input type="number" min="13" max="120" name="age" id="age"
+        /></label>
+        <label for="referrer"
+          >How did you hear about us?
+          <select name="referrer" id="referrer">
+            <option value="" disabled selected>(select one)</option>
+            <option value="1">FreeCodeCamp Sosial Media</option>
+            <option value="2">FreeCodeCamp Website</option>
+            <option value="3">FreeCodeCamp Course</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio"
+          >Provide a bio:<textarea
+            id="bio"
+            name="bio"
+            cols="30"
+            rows="3"
+            placeholder="I like coding on the beach..."
+          >
+          </textarea>
+        </label>
+        <label for="term-and-conditions"
+          ><input
+            type="checkbox"
+            name="term-and-conditions"
+            id="term-and-conditions"
+            required
+          />I Accept the <a href="#">terms and conditions</a></label
+        >
+      </fieldset>
+      <input type="submit" value="Submit" name="submit" />
     </form>
   </body>
 </html>
