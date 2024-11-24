@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with required information</p>
+    <form action="#" method="post">
+      <fieldset>
+        <label for="firstName"
+          >Enter Your First Name:<input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Input Your First Name"
+            required
+        /></label>
+        <label for="secondName">
+          Enter Your Second Name:
+          <input
+            type="text"
+            id="secondName"
+            name="secondName"
+            placeholder="Input Your Second Name"
+            required
+        /></label>
+        <label for="email"
+          >Enter Your Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Input Your Email"
+            required
+        /></label>
+        <label for="password"
+          >Create a New Password
+          <input
+            type="password"
+            pattern="[a-z0-5]{8,}"
+            title="Password min 8 character"
+            name="password"
+            id="password"
+            placeholder="Input Your Password"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account Type (Required)</legend>
+        <label for="personalAccount"
+          ><input
+            type="radio"
+            name="accountType"
+            id="personalAccount"
+            checked
+          />Personal Account</label
+        >
+        <label for="businessAccount"
+          ><input type="radio" name="accountType" id="businessAccount" />
+          Business Account
+        </label>
+      </fieldset>
+      <fieldset></fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
